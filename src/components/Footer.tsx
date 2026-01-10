@@ -6,10 +6,10 @@ import logoFooterSvg from '@/assets/logo-footer.svg';
 const Footer = () => {
   const footerLinks = {
     services: [
-      { name: 'Internet Plans', href: '/internet' },
-      { name: 'TV Packages', href: '/tv' },
-      { name: 'Streaming', href: '/tv' },
-      { name: 'Bundles', href: '/bundles' },
+      { name: 'Internet Guidance', href: '/internet' },
+      { name: 'TV Guidance', href: '/tv' },
+      { name: 'Coverage Info', href: '/coverage' },
+      { name: 'FAQ', href: '/faq' },
     ],
     company: [
       { name: 'About Us', href: '/about' },
@@ -43,9 +43,9 @@ const Footer = () => {
               <img src={logoFooterSvg} alt="HYPEFIBER Footer Logo" className="h-16 w-auto" />
             </Link>
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
-              HYPEFIBER is an independent third-party service assistance startup. 
-              We provide guidance and support to help you navigate cable, internet, and streaming services.
-              All trademarks belong to their respective owners.
+              HYPEFIBER provides independent third-party guidance for internet, cable TV, and connectivity services. 
+              We are NOT an ISP or service provider. We are NOT affiliated with any telecom company. 
+              All provider mentions are for informational purposes only.
             </p>
             <div className="flex gap-4">
               {[Facebook, Twitter, Instagram, Youtube].map((Icon, i) => (
@@ -85,10 +85,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 HYPEFIBER. All rights reserved. | Owned by Hype Network | Call Now: (888) 418-7872
+            © 2025 HYPEFIBER. All rights reserved. | Owned by Hype Network | Not an ISP • No brand affiliation
           </p>
           <p className="text-sm text-muted-foreground">
-            Independent Service Assistance
+            Independent Third-Party Advisors
           </p>
         </div>
       </div>

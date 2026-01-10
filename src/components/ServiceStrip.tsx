@@ -7,23 +7,23 @@ import gamingLifestyle from '@/assets/gaming-lifestyle.jpg';
 
 const services = [
   {
-    title: 'High-Speed Internet',
-    description: 'Fiber-powered speeds up to 1 Gbps',
+    title: 'Internet Guidance',
+    description: 'Help understanding broadband options',
     image: internetRouter,
   },
   {
-    title: 'Premium TV',
-    description: '200+ HD & 4K channels',
+    title: 'TV Guidance',
+    description: 'Navigate cable TV provider options',
     image: smartTv,
   },
   {
-    title: 'Streaming',
-    description: 'All your favorite apps included',
+    title: 'Streaming Info',
+    description: 'Learn about streaming alternatives',
     image: streamingDevices,
   },
   {
-    title: 'Gaming',
-    description: 'Ultra-low latency connection',
+    title: 'Connectivity Help',
+    description: 'Practical connectivity guidance',
     image: gamingLifestyle,
   },
 ];
@@ -40,8 +40,8 @@ const ServiceStrip = () => {
         >
           <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-2">+ What We Do</p>
           <h2 className="sub-heading text-foreground">
-            DESIGNING FOR SEAMLESS AND<br />
-            <span className="text-muted-foreground">ENJOYABLE INTERACTIONS.</span>
+            HELPING YOU UNDERSTAND<br />
+            <span className="text-muted-foreground">SERVICE OPTIONS.</span>
           </h2>
         </motion.div>
 

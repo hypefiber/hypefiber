@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, Star, Phone } from 'lucide-react';
+import { ArrowRight, Play, Star, Phone, AlertCircle } from 'lucide-react';
 import heroPerson from '@/assets/hero-person.jpg';
 import BrandMarquee from './BrandMarquee';
 
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-full">
                   <Star className="w-4 h-4" />
-                  <span className="text-sm font-semibold">Independent Service Assistance</span>
+                  <span className="text-sm font-semibold">Third-Party Service Guidance</span>
                 </div>
 
                 {/* Main Heading - Stacked Bold Typography */}
@@ -45,7 +45,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="block text-foreground"
                   >
-                    EXPERT
+                    INDEPENDENT
                   </motion.span>
                   <motion.span 
                     initial={{ opacity: 0, x: -50 }}
@@ -53,7 +53,7 @@ const HeroSection = () => {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="block text-primary neon-text-glow"
                   >
-                    GUIDANCE
+                    SERVICE
                   </motion.span>
                   <motion.span 
                     initial={{ opacity: 0, x: -50 }}
@@ -61,9 +61,15 @@ const HeroSection = () => {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="block text-foreground"
                   >
-                    FOR SERVICES
+                    ADVISORS
                   </motion.span>
                 </h1>
+
+                {/* Subheading */}
+                <p className="text-xl text-muted-foreground max-w-2xl">
+                  Get independent guidance on internet, cable TV, and connectivity services. 
+                  We help you understand your options and navigate provider processes.
+                </p>
 
                 {/* CTA Buttons */}
                 <motion.div 
@@ -79,9 +85,17 @@ const HeroSection = () => {
                     className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
                   >
                     <Phone className="w-5 h-5" />
-                    Call Now: (888) 418-7872
+                    Talk to a Third-Party Advisor
                   </motion.a>
                 </motion.div>
+
+                {/* Disclaimer Badge */}
+                <div className="inline-flex items-start gap-2 px-4 py-3 bg-red-500/10 border border-red-500/30 rounded-xl max-w-md">
+                  <AlertCircle className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />
+                  <p className="text-xs text-foreground">
+                    <strong>Not an ISP.</strong> No brand affiliation. Independent guidance only.
+                  </p>
+                </div>
               </motion.div>
             </div>
 

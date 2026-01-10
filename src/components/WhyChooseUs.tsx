@@ -1,27 +1,27 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, AlertCircle } from 'lucide-react';
 import cityNetwork from '@/assets/city-network.jpg';
 
 const reasons = [
   {
     number: '01',
-    title: 'Local Expertise',
-    desc: 'We know your neighborhood and build networks tailored to your community.',
+    title: 'Independent Guidance',
+    desc: 'We provide unbiased information without selling services from any specific provider.',
   },
   {
     number: '02',
-    title: 'No Hidden Fees',
-    desc: 'Transparent pricing with no surprise charges on your monthly bill.',
+    title: 'Help You Understand',
+    desc: 'We explain service options, plans, and provider processes in plain language.',
   },
   {
     number: '03',
-    title: 'Future-Proof Tech',
-    desc: 'Our fiber infrastructure is ready for speeds beyond 10 Gbps.',
+    title: 'No Affiliation',
+    desc: 'We are not affiliated with any ISP, cable, or telecom company.',
   },
   {
     number: '04',
-    title: '24/7 Local Support',
-    desc: 'Real humans answering your calls, day or night.',
+    title: 'Practical Support',
+    desc: 'Get practical guidance on connectivity issues and navigating providers.',
   },
 ];
 
@@ -40,22 +40,27 @@ const WhyChooseUs = () => {
             <div className="relative rounded-3xl overflow-hidden">
               <img
                 src={cityNetwork}
-                alt="City fiber network"
+                alt="Service guidance"
                 className="w-full aspect-[4/5] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
             </div>
             
-            {/* Floating Stats */}
+            {/* Floating Disclaimer */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="absolute -bottom-8 -right-8 bg-primary p-8 rounded-3xl"
+              className="absolute -bottom-8 -right-8 bg-card p-6 rounded-3xl border-2 border-primary shadow-lg max-w-xs"
             >
-              <p className="text-6xl font-bold text-primary-foreground">15+</p>
-              <p className="text-primary-foreground/80 text-sm mt-1">Years of Excellence</p>
+              <div className="flex items-start gap-2">
+                <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-bold text-foreground text-sm mb-1">Not an ISP</p>
+                  <p className="text-xs text-muted-foreground">Independent guidance only</p>
+                </div>
+              </div>
             </motion.div>
           </motion.div>
 
@@ -67,8 +72,9 @@ const WhyChooseUs = () => {
           >
             <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-4">+ Why Us</p>
             <h2 className="sub-heading text-foreground mb-12">
-              WHY<br />
-              <span className="text-primary neon-text-glow">HYPEFIBER?</span>
+              WHY CHOOSE<br />
+              <span className="text-primary neon-text-glow">INDEPENDENT</span><br />
+              <span className="text-primary neon-text-glow">GUIDANCE?</span>
             </h2>
 
             <div className="space-y-8">

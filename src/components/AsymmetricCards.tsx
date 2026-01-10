@@ -6,20 +6,20 @@ import internetRouter from '@/assets/internet-router.jpg';
 
 const cards = [
   {
-    title: 'BRAND BUILDING & STRATEGY.',
-    description: 'Comprehensive internet packages designed for every household size and usage pattern.',
+    title: 'UNDERSTAND YOUR OPTIONS.',
+    description: 'We help you understand internet/broadband service options available in your area.',
     image: heroFamily,
     size: 'large',
   },
   {
-    title: 'MARKETING & CAMPAIGN.',
-    description: 'Stream on multiple devices simultaneously without buffering or lag.',
+    title: 'NAVIGATE PROVIDERS.',
+    description: 'Get guidance on how to work with service providers and understand their processes.',
     image: streamingDevices,
     size: 'medium',
   },
   {
-    title: 'CREATIVE DIGITAL SOLUTION.',
-    description: 'Next-generation fiber technology delivering consistent speeds around the clock.',
+    title: 'PRACTICAL GUIDANCE.',
+    description: 'Learn about connectivity issues and get practical advice on addressing them.',
     image: internetRouter,
     size: 'medium',
   },

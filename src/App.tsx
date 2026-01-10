@@ -9,7 +9,6 @@ import ChatBot from "./components/ChatBot";
 import Index from "./pages/Index";
 import Internet from "./pages/Internet";
 import TV from "./pages/TV";
-import Bundles from "./pages/Bundles";
 import Coverage from "./pages/Coverage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -35,7 +34,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/internet" element={<Internet />} />
           <Route path="/tv" element={<TV />} />
-          <Route path="/bundles" element={<Bundles />} />
           <Route path="/coverage" element={<Coverage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

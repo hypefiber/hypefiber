@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Internet', href: '/internet' },
     { name: 'TV & Streaming', href: '/tv' },
-    { name: 'Bundles', href: '/bundles' },
     { name: 'Coverage', href: '/coverage' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
@@ -46,7 +45,7 @@ const Navbar = () => {
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-primary-foreground font-semibold text-sm rounded-full hover:scale-105 transition-transform neon-glow"
             >
               <Phone className="w-4 h-4" />
-              Call Now: (888) 418-7872
+              Talk to an Advisor
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -84,7 +83,7 @@ const Navbar = () => {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full mt-4"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: (888) 418-7872
+                Talk to an Advisor
               </a>
             </div>
           </motion.div>

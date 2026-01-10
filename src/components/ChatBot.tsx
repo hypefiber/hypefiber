@@ -7,21 +7,21 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([
     { 
       id: 1, 
-      text: "Hi! I'm here to help you with internet, TV, and streaming services. How can I assist you today?", 
+      text: "Hi! I'm here to provide independent guidance on internet, TV, and connectivity services. Note: We are NOT an ISP or service provider. How can I help you understand your options?", 
       sender: 'bot' 
     }
   ]);
   const [input, setInput] = useState('');
 
   const quickReplies = [
-    "Internet plans",
-    "TV packages",
-    "Bundle deals",
-    "Speak to an agent"
+    "Internet guidance",
+    "TV service info",
+    "Provider navigation",
+    "Talk to an advisor"
   ];
 
   const handleQuickReply = (reply: string) => {
-    if (reply === "Speak to an agent") {
+    if (reply === "Talk to an advisor") {
       window.location.href = "tel:8884187872";
       return;
     }
@@ -31,7 +31,7 @@ const ChatBot = () => {
       { id: messages.length + 1, text: reply, sender: 'user' },
       { 
         id: messages.length + 2, 
-        text: `Great! For detailed information about ${reply.toLowerCase()}, please call our assistance line at (888) 418-7872. Our team is available 24/7 to help you.`, 
+        text: `I can provide information about ${reply.toLowerCase()}. For personalized independent guidance, please call our third-party advisors at (888) 418-7872. Remember: We are NOT an ISP or service provider.`, 
         sender: 'bot' 
       }
     ]);
@@ -45,7 +45,7 @@ const ChatBot = () => {
       { id: messages.length + 1, text: input, sender: 'user' },
       { 
         id: messages.length + 2, 
-        text: "Thank you for your message! For the best assistance, please call us at (888) 418-7872. Our team is ready to help you 24/7.", 
+        text: "Thank you! For independent service guidance, please call our third-party advisors at (888) 418-7872. We provide guidance only - we are NOT an ISP.", 
         sender: 'bot' 
       }
     ]);

@@ -1,30 +1,8 @@
 import { motion } from 'framer-motion';
-import { Check, Wifi, Zap, Shield, Phone } from 'lucide-react';
+import { Check, Wifi, Zap, Shield, Phone, AlertCircle } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import internetRouter from '@/assets/internet-router.jpg';
-
-const plans = [
-  {
-    name: 'Basic',
-    speed: '100 Mbps',
-    price: 49,
-    features: ['Unlimited Data', 'Free Installation', 'WiFi Router Included', '24/7 Support'],
-  },
-  {
-    name: 'Pro',
-    speed: '500 Mbps',
-    price: 79,
-    popular: true,
-    features: ['Unlimited Data', 'Free Installation', 'Premium WiFi 6 Router', '24/7 Priority Support', 'Free Speed Upgrades'],
-  },
-  {
-    name: 'Ultra',
-    speed: '1 Gbps',
-    price: 99,
-    features: ['Unlimited Data', 'Free Installation', 'Mesh WiFi System', 'Dedicated Support Line', 'Gaming Priority Mode', 'Static IP Option'],
-  },
-];
 
 const Internet = () => {
   return (
@@ -39,23 +17,44 @@ const Internet = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-4">+ Internet Guidance</p>
+              <p className="text-primary text-sm font-semibold uppercase tracking-wider mb-4">+ Independent Internet Service Guidance</p>
               <h1 className="display-heading text-foreground mb-6">
-                ASSISTANCE<br />
-                WITH<br />
-                <span className="text-primary neon-text-glow">INTERNET</span>
+                GET<br />
+                INDEPENDENT<br />
+                <span className="text-primary neon-text-glow">INTERNET</span><br />
+                <span className="text-primary neon-text-glow">GUIDANCE</span>
               </h1>
-              <p className="text-lg text-muted-foreground max-w-md">
-                We guide you through available internet options and help you find the right plan 
-                for your needs. All provider arrangements are handled directly with the provider.
+              <p className="text-lg text-muted-foreground max-w-md mb-6">
+                We help you understand internet/broadband service options and navigate service provider processes. 
+                We provide practical guidance on connectivity issues.
               </p>
 
+              {/* Main CTA */}
+              <motion.a
+                href="tel:8884187872"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow mb-6"
+              >
+                <Phone className="w-5 h-5" />
+                Call for Independent Service Guidance
+              </motion.a>
+
               {/* Disclaimer */}
-              <div className="mt-8 p-4 bg-primary/10 border border-primary/30 rounded-xl">
-                <p className="text-xs text-foreground">
-                  <strong>Note:</strong> Hype Fiber does not provide internet services directly. 
-                  We provide guidance and assistance only.
-                </p>
+              <div className="p-4 bg-red-500/10 border border-red-500/30 rounded-xl">
+                <div className="flex gap-3">
+                  <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <div className="text-xs text-foreground space-y-2">
+                    <p><strong>Important Disclaimer:</strong></p>
+                    <ul className="list-disc pl-4 space-y-1">
+                      <li>We are NOT an internet service provider (ISP)</li>
+                      <li>We are NOT affiliated, authorized, or endorsed by any telecom/cable company</li>
+                      <li>We do NOT sell official ISP services</li>
+                      <li>We do NOT provide guaranteed technical fixes</li>
+                      <li>All provider mentions are for informational purposes only</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </motion.div>
             
@@ -75,14 +74,29 @@ const Internet = () => {
         </div>
       </section>
 
-      {/* Features */}
+      {/* What We Do */}
       <section className="py-20 bg-card">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="sub-heading text-foreground mb-6">
+              WHAT WE <span className="text-primary">DO</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              At hypefiber.com, we help users understand internet/broadband service options 
+              and navigate service provider processes.
+            </p>
+          </motion.div>
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Zap, title: 'Speed Guidance', desc: 'We help you understand different speed options and what you need' },
-              { icon: Shield, title: 'Provider Comparison', desc: 'Compare available providers and plans in your area' },
-              { icon: Wifi, title: 'Setup Assistance', desc: 'We guide you through setup and optimize your connection' },
+              { icon: Zap, title: 'Understand Options', desc: 'We explain different internet speed tiers and what they mean for your usage' },
+              { icon: Shield, title: 'Navigate Processes', desc: 'Get guidance on how to work with service providers in your area' },
+              { icon: Wifi, title: 'Practical Guidance', desc: 'Learn about connectivity issues and how to address them' },
             ].map((feature, i) => (
               <motion.div
                 key={feature.title}
@@ -101,72 +115,86 @@ const Internet = () => {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="section-padding">
-        <div className="max-w-7xl mx-auto">
+      {/* What We DON'T Do */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
-            <h2 className="sub-heading text-foreground">
-              WE GUIDE YOU<br />
-              <span className="text-primary">THROUGH OPTIONS</span>
+            <h2 className="sub-heading text-foreground mb-6">
+              WHAT WE <span className="text-red-500">DON'T DO</span>
             </h2>
-            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Contact us to discuss your internet needs. We'll provide guidance on available options from providers in your area.
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+              To avoid confusion, here's what we are NOT:
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {plans.map((plan, i) => (
-              <motion.div
-                key={plan.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className={`relative p-8 rounded-3xl ${plan.popular ? 'bg-primary text-primary-foreground' : 'bg-card'}`}
-              >
-                {plan.popular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-secondary text-secondary-foreground text-sm font-semibold rounded-full">
-                    Popular
-                  </span>
-                )}
-                
-                <h3 className="font-display font-bold text-2xl mb-2">{plan.name}</h3>
-                <p className={`text-sm mb-4 ${plan.popular ? 'opacity-80' : 'text-muted-foreground'}`}>{plan.speed}</p>
-                
-                <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-5xl font-bold">${plan.price}</span>
-                  <span className={plan.popular ? 'opacity-80' : 'text-muted-foreground'}>/mo*</span>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3">
-                      <Check className={`w-5 h-5 ${plan.popular ? '' : 'text-primary'}`} />
-                      <span className={`text-sm ${plan.popular ? '' : 'text-foreground'}`}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <a href="tel:8884187872" className={`w-full py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 ${
-                  plan.popular 
-                    ? 'bg-background text-foreground hover:bg-foreground hover:text-background' 
-                    : 'bg-primary text-primary-foreground hover:scale-105'
-                }`}>
-                  <Phone className="w-5 h-5" />
-                  Call Now: (888) 418-7872
-                </a>
-              </motion.div>
-            ))}
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                'We are NOT an internet service provider (ISP)',
+                'We are NOT affiliated with any telecom/cable company',
+                'We do NOT sell official ISP services',
+                'We do NOT provide guaranteed technical fixes',
+                'We are NOT authorized by any provider',
+                'We do NOT represent any specific brand',
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="flex items-start gap-3 p-4 bg-red-500/5 border border-red-500/20 rounded-xl"
+                >
+                  <AlertCircle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                  <p className="text-foreground font-medium">{item}</p>
+                </motion.div>
+              ))}
+            </div>
+            
+            <div className="mt-8 p-6 bg-card rounded-2xl text-center">
+              <p className="text-sm text-muted-foreground">
+                <strong>Note:</strong> All mentions of service providers are for informational purposes only. 
+                We provide independent guidance to help you make informed decisions.
+              </p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <p className="text-center text-muted-foreground text-sm mt-8">
-            *Pricing varies by provider and location. Contact us for available options in your area.
-          </p>
+      {/* CTA */}
+      <section className="py-20 bg-card">
+        <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="sub-heading text-foreground mb-6">
+              NEED INDEPENDENT<br />
+              <span className="text-primary">INTERNET GUIDANCE?</span>
+            </h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Talk to a third-party internet advisor for independent service guidance. 
+              No brand affiliation. Not an ISP.
+            </p>
+            <motion.a
+              href="tel:8884187872"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
+            >
+              <Phone className="w-5 h-5" />
+              Call for Independent Service Guidance
+            </motion.a>
+            <p className="text-xs text-muted-foreground mt-4">
+              Not an ISP • No brand affiliation
+            </p>
+          </motion.div>
         </div>
       </section>
 

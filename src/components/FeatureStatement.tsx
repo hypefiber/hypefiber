@@ -26,12 +26,12 @@ const FeatureStatement = () => {
           className="text-center"
         >
           <h2 className="display-heading max-w-5xl mx-auto">
-            <span className="text-foreground">BUILT FOR </span>
-            <span className="text-primary neon-text-glow">SPEED</span>
+            <span className="text-foreground">INDEPENDENT </span>
+            <span className="text-primary neon-text-glow">GUIDANCE</span>
             <span className="text-foreground">.</span>
             <br />
-            <span className="text-muted-foreground">DESIGNED FOR </span>
-            <span className="text-secondary">RELIABILITY</span>
+            <span className="text-muted-foreground">NO </span>
+            <span className="text-secondary">AFFILIATION</span>
             <span className="text-muted-foreground">.</span>
           </h2>
           
@@ -42,6 +42,16 @@ const FeatureStatement = () => {
             transition={{ duration: 1, delay: 0.5 }}
             className="h-1 w-48 bg-primary mx-auto mt-12 origin-left"
           />
+          
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+            className="text-muted-foreground text-lg mt-8 max-w-2xl mx-auto"
+          >
+            We help you understand service options. We are NOT an ISP or service provider.
+          </motion.p>
         </motion.div>
       </div>
     </section>

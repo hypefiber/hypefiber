@@ -58,10 +58,10 @@ const Coverage = () => {
               placeholder="Enter your address..."
               className="flex-1 px-6 py-4 bg-background border border-border rounded-full text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
             />
-            <button className="px-8 py-4 bg-background text-foreground font-semibold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-2">
-              Check Now
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            <a href="tel:8884187872" className="px-8 py-4 bg-background text-foreground font-semibold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-2">
+              <Phone className="w-5 h-5" />
+              Call Now: (888) 418-7872
+            </a>
           </div>
         </div>
       </section>
@@ -196,16 +196,12 @@ const Coverage = () => {
               Request service in your area. The more requests we get, the faster we expand to your neighborhood.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <button className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow">
-                Request Service
-                <ArrowRight className="w-5 h-5" />
-              </button>
               <a
                 href="tel:8884187872"
-                className="inline-flex items-center gap-2 px-8 py-4 border-2 border-border text-foreground font-semibold rounded-full hover:border-primary transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
               >
                 <Phone className="w-5 h-5" />
-                Call Us
+                Call Now: (888) 418-7872
               </a>
             </div>
           </motion.div>

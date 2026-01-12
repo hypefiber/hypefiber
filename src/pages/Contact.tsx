@@ -108,9 +108,9 @@ const Contact = () => {
                 </div>
                 <h3 className="font-display font-bold text-xl text-foreground mb-2">{option.title}</h3>
                 <p className="text-muted-foreground mb-6">{option.desc}</p>
-                <button className="px-6 py-3 bg-muted text-foreground font-semibold rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  {option.cta}
-                </button>
+                <a href="tel:8884187872" className="inline-block px-6 py-3 bg-muted text-foreground font-semibold rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  Call Now: (888) 418-7872
+                </a>
               </motion.div>
             ))}
           </div>

@@ -19,7 +19,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative min-h-[120vh] pt-24">
+      <div className="relative min-h-[120vh] pt-24 pb-32">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="relative grid lg:grid-cols-12 gap-8 min-h-[80vh] items-center">
             

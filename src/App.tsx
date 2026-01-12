@@ -30,6 +30,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <StickyCallButton />
+        <ChatBot />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/internet" element={<Internet />} />

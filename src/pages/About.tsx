@@ -278,11 +278,11 @@ const About = () => {
                 We're always looking for talented, passionate people to join our mission of helping people find the right services. Explore open positions and grow your career with HYPEFIBER.
               </p>
               <a
-                href="/contact"
+                href="tel:8884187872"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
               >
-                View Careers
-                <ArrowRight className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
+                Call Now: (888) 418-7872
               </a>
             </motion.div>
           </div>

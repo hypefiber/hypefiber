@@ -285,17 +285,11 @@ const Bundles = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="/coverage"
+                href="tel:8884187872"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
               >
-                Check Availability
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 border-2 border-border text-foreground font-semibold rounded-full hover:border-primary transition-colors"
-              >
-                Contact Sales
+                <Phone className="w-5 h-5" />
+                Call Now: (888) 418-7872
               </a>
             </div>
           </motion.div>

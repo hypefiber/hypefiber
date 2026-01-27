@@ -58,9 +58,9 @@ const Coverage = () => {
               placeholder="Enter your address..."
               className="flex-1 px-6 py-4 bg-background border border-border rounded-full text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
             />
-            <a href="tel:8884187872" className="px-8 py-4 bg-background text-foreground font-semibold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-2">
+            <a href="tel:8883832881" className="px-8 py-4 bg-background text-foreground font-semibold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />
-              Call Now: (888) 418-7872
+              Call Now: (888) 383-2881
             </a>
           </div>
         </div>
@@ -197,11 +197,11 @@ const Coverage = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="tel:8884187872"
+                href="tel:8883832881"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
               >
                 <Phone className="w-5 h-5" />
-                Call Now: (888) 418-7872
+                Call Now: (888) 383-2881
               </a>
             </div>
           </motion.div>

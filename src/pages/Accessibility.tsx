@@ -102,7 +102,7 @@ const Accessibility = () => {
               </p>
               <ul className="list-none text-muted-foreground space-y-2">
                 <li><strong className="text-foreground">Email:</strong> <span className="text-primary">accessibility@hypefiber.com</span></li>
-                <li><strong className="text-foreground">Phone:</strong> (888) 418-7872 (TTY available)</li>
+                <li><strong className="text-foreground">Phone:</strong> (888) 383-2881 (TTY available)</li>
                 <li><strong className="text-foreground">Relay Service:</strong> Dial 711 for assistance</li>
               </ul>
             </div>

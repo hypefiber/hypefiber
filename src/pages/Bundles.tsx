@@ -160,13 +160,13 @@ const Bundles = () => {
                   ))}
                 </ul>
 
-                <a href="tel:8884187872" className={`w-full py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 ${
+                <a href="tel:8883832881" className={`w-full py-4 rounded-full font-semibold transition-all flex items-center justify-center gap-2 ${
                   bundle.popular 
                     ? 'bg-background text-foreground hover:bg-foreground hover:text-background' 
                     : 'bg-primary text-primary-foreground hover:scale-105'
                 }`}>
                   <Phone className="w-5 h-5" />
-                  Call Now: (888) 418-7872
+                  Call Now: (888) 383-2881
                 </a>
               </motion.div>
             ))}
@@ -285,11 +285,11 @@ const Bundles = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="tel:8884187872"
+                href="tel:8883832881"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"
               >
                 <Phone className="w-5 h-5" />
-                Call Now: (888) 418-7872
+                Call Now: (888) 383-2881
               </a>
             </div>
           </motion.div>

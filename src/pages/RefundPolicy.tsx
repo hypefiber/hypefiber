@@ -91,7 +91,7 @@ const RefundPolicy = () => {
             <div className="bg-card p-8 rounded-2xl border border-border">
               <h2 className="text-2xl font-display font-bold text-foreground mb-4">How to Request a Refund</h2>
               <ol className="list-decimal list-inside text-muted-foreground space-y-3">
-                <li>Contact our support team at <span className="text-primary">support@hypefiber.com</span> or <span className="text-primary">(888) 418-7872</span></li>
+                <li>Contact our support team at <span className="text-primary">support@hypefiber.com</span> or <span className="text-primary">(888) 383-2881</span></li>
                 <li>Provide your account number and original purchase date</li>
                 <li>Explain the reason for your refund request</li>
                 <li>Our team will review your eligibility and respond within 5-7 business days</li>
@@ -136,7 +136,7 @@ const RefundPolicy = () => {
                   </p>
                   <div className="space-y-2 text-muted-foreground">
                     <p><span className="text-primary font-semibold">Email:</span> support@hypefiber.com</p>
-                    <p><span className="text-primary font-semibold">Phone:</span> (888) 418-7872 (24/7)</p>
+                    <p><span className="text-primary font-semibold">Phone:</span> (888) 383-2881 (24/7)</p>
                     <p><span className="text-primary font-semibold">Web Support:</span> Start a chat on our website</p>
                   </div>
                 </div>

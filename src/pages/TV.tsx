@@ -32,7 +32,7 @@ const TV = () => {
 
               {/* Main CTA */}
               <motion.a
-                href="tel:8884187872"
+                href="tel:8883832881"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow mb-6"
@@ -225,7 +225,7 @@ const TV = () => {
               No brand affiliation. Not a service provider.
             </p>
             <motion.a
-              href="tel:8884187872"
+              href="tel:8883832881"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full neon-glow"

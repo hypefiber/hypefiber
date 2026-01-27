@@ -32,7 +32,7 @@ const AsymmetricCards = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Large Card */}
           <motion.a
-            href="tel:8884187872"
+            href="tel:8883832881"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -71,7 +71,7 @@ const AsymmetricCards = () => {
           {cards.slice(1).map((card, index) => (
             <a
               key={card.title}
-              href="tel:8884187872"
+              href="tel:8883832881"
               className="group bg-card rounded-3xl overflow-hidden hover-lift cursor-pointer block md:col-span-1"
             >
               <div className="aspect-video relative overflow-hidden">

@@ -49,7 +49,7 @@ const ServiceStrip = () => {
           {services.map((service, index) => (
             <motion.a
               key={service.title}
-              href="tel:8884187872"
+              href="tel:8883832881"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

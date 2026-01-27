@@ -41,11 +41,11 @@ const Navbar = () => {
           {/* CTA + Mobile Toggle */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:8884187872"
+              href="tel:8883832881"
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-primary text-primary-foreground font-semibold text-sm rounded-full hover:scale-105 transition-transform neon-glow"
             >
               <Phone className="w-4 h-4" />
-              Call Now: (888) 418-7872
+              Call Now: (888) 383-2881
             </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -78,12 +78,12 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="tel:8884187872"
+                href="tel:8883832881"
                 onClick={() => setIsOpen(false)}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-full mt-4"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: (888) 418-7872
+                Call Now: (888) 383-2881
               </a>
             </div>
           </motion.div>

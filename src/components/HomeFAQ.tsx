@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: 'How can I get help from HYPEFIBER?',
-    answer: 'Call us at (888) 418-7872 to speak with a third-party advisor. We provide independent service guidance to help you understand internet/broadband options and navigate provider processes.',
+    answer: 'Call us at (888) 383-2881 to speak with a third-party advisor. We provide independent service guidance to help you understand internet/broadband options and navigate provider processes.',
   },
 ];
 
@@ -51,7 +51,7 @@ const HomeFAQ = () => {
             </p>
             
             <a
-              href="tel:8884187872"
+              href="tel:8883832881"
               className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all"
             >
               Talk to a Third-Party Advisor

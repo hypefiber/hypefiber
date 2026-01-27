@@ -22,7 +22,7 @@ const ChatBot = () => {
 
   const handleQuickReply = (reply: string) => {
     if (reply === "Talk to an advisor") {
-      window.location.href = "tel:8884187872";
+      window.location.href = "tel:8883832881";
       return;
     }
     
@@ -31,7 +31,7 @@ const ChatBot = () => {
       { id: messages.length + 1, text: reply, sender: 'user' },
       { 
         id: messages.length + 2, 
-        text: `I can provide information about ${reply.toLowerCase()}. For personalized independent guidance, please call our third-party advisors at (888) 418-7872. Remember: We are NOT an ISP or service provider.`, 
+        text: `I can provide information about ${reply.toLowerCase()}. For personalized independent guidance, please call our third-party advisors at (888) 383-2881. Remember: We are NOT an ISP or service provider.`, 
         sender: 'bot' 
       }
     ]);
@@ -45,7 +45,7 @@ const ChatBot = () => {
       { id: messages.length + 1, text: input, sender: 'user' },
       { 
         id: messages.length + 2, 
-        text: "Thank you! For independent service guidance, please call our third-party advisors at (888) 418-7872. We provide guidance only - we are NOT an ISP.", 
+        text: "Thank you! For independent service guidance, please call our third-party advisors at (888) 383-2881. We provide guidance only - we are NOT an ISP.", 
         sender: 'bot' 
       }
     ]);
@@ -125,11 +125,11 @@ const ChatBot = () => {
 
               {/* Call Now Button */}
               <a
-                href="tel:8884187872"
+                href="tel:8883832881"
                 className="w-full flex items-center justify-center gap-2 py-3 bg-primary text-primary-foreground rounded-xl font-bold hover:opacity-90 transition-opacity mb-3"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: (888) 418-7872
+                Call Now: (888) 383-2881
               </a>
 
               {/* Input */}

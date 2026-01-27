@@ -6,7 +6,7 @@ import cityNetwork from '@/assets/city-network.jpg';
 
 const Contact = () => {
   const contactInfo = [
-    { icon: Phone, title: 'Phone', value: '(888) 418-7872', desc: '24/7 Support Available' },
+    { icon: Phone, title: 'Phone', value: '(888) 383-2881', desc: '24/7 Support Available' },
     { icon: Mail, title: 'Email', value: 'support@hypefiber.com', desc: 'Response within 24hrs' },
     { icon: MapPin, title: 'Address', value: '123 Digital Avenue', desc: 'Tech City, TC 12345' },
     { icon: Clock, title: 'Hours', value: '24/7 Support', desc: 'Always available' },
@@ -108,8 +108,8 @@ const Contact = () => {
                 </div>
                 <h3 className="font-display font-bold text-xl text-foreground mb-2">{option.title}</h3>
                 <p className="text-muted-foreground mb-6">{option.desc}</p>
-                <a href="tel:8884187872" className="inline-block px-6 py-3 bg-muted text-foreground font-semibold rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  Call Now: (888) 418-7872
+                <a href="tel:8883832881" className="inline-block px-6 py-3 bg-muted text-foreground font-semibold rounded-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  Call Now: (888) 383-2881
                 </a>
               </motion.div>
             ))}
@@ -125,7 +125,7 @@ const Contact = () => {
           >
             <h3 className="font-display font-bold text-foreground mb-3">Phone Support Information</h3>
             <p className="text-muted-foreground text-sm">
-              When you call (888) 418-7872, our greeting states: <span className="italic text-foreground">"Thank you for calling HYPEFIBER, an independent service assistance platform."</span> Our team does not represent any cable, internet, or streaming service provider.
+              When you call (888) 383-2881, our greeting states: <span className="italic text-foreground">"Thank you for calling HYPEFIBER, an independent service assistance platform."</span> Our team does not represent any cable, internet, or streaming service provider.
             </p>
           </motion.div>
         </div>

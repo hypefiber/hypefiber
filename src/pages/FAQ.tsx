@@ -43,7 +43,7 @@ const faqs = [
       },
       { 
         q: 'How do I start getting assistance?', 
-        a: 'Visit our Contact page or call (888) 418-7872 to speak with our support team. They will discuss your needs and explain our service offerings and fees.' 
+        a: 'Visit our Contact page or call (888) 383-2881 to speak with our support team. They will discuss your needs and explain our service offerings and fees.' 
       },
     ],
   },
@@ -222,11 +222,11 @@ const FAQ = () => {
               Our support team is here to help 24/7.
             </p>
             <a
-              href="tel:8884187872"
+              href="tel:8883832881"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:scale-105 transition-transform neon-glow"
             >
               <Phone className="w-5 h-5" />
-              Call Now: (888) 418-7872
+              Call Now: (888) 383-2881
             </a>
           </motion.div>
         </div>
